@@ -47,4 +47,10 @@ public class RollercoasterTest {
     public void tallPersonDoublePrice() {
         assertEquals(16.80, rollerCoaster.priceFor(visitor4), 0.0);
     }
+
+    @Test
+    public void notTallPersonNormalPrice() {
+        assertEquals(8.4, rollerCoaster.priceFor(visitor3), 0.0);
+    }
+
 }
