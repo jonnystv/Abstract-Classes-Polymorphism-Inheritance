@@ -53,4 +53,9 @@ public class RollercoasterTest {
         assertEquals(8.4, rollerCoaster.priceFor(visitor3), 0.0);
     }
 
+    @Test
+    public void canRideRollerCosterIfTallOldEnough() {
+        assertEquals(true, rollerCoaster.isAllowedTo(visitor3));
+    }
+
 }
