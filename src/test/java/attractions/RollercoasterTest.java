@@ -58,4 +58,12 @@ public class RollercoasterTest {
         assertEquals(true, rollerCoaster.isAllowedTo(visitor3));
     }
 
+    @Test
+    public void cannotRideRollerCoasterNotTallEnough() {
+        assertEquals(false, rollerCoaster.isAllowedTo(visitor2));
+    }
+
+
+
+
 }
